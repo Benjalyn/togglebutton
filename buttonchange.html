@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Toggle Button</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <button id="button1">Submit Files</button>
+
+    <script>
+        const btn = document.getElementById('button1');
+
+
+btn.addEventListener('click', function handleClick() {
+  const initialText='Submit Files';
+
+  if (btn.textContent.toLowerCase().includes(initialText.toLowerCase())) {
+    btn.textContent='Unsubmit';
+  }else {
+    btn.textContent=initialText;
+  }
+});
+
+
+    </script>
+  </body>
+</html>
+
